@@ -1,0 +1,8 @@
+streamlit==1.44.1
+spacy==3.7.4
+sentence-transformers==2.7.0
+torch
+beautifulsoup4==4.12.3
+lxml==5.2.1
+playwright==1.44.0
+scikit-learn
