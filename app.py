@@ -370,6 +370,16 @@ def extract_lead(url):
     headless=True,
     args=[
         "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage",
+        "--disable-gpu",
+        "--no-zygote",
+        "--single-process"
+    ]
+)
+    headless=True,
+    args=[
+        "--no-sandbox",
         "--disable-dev-shm-usage",
         "--disable-gpu",
         "--single-process"
