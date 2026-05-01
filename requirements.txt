@@ -1,8 +1,12 @@
 streamlit==1.44.1
-spacy==3.7.4
+pip<25
+setuptools<75
+wheel
+spacy==3.7.2
+thinc==8.2.2
+beautifulsoup4
+lxml
 sentence-transformers==2.7.0
 torch
-beautifulsoup4==4.12.3
-lxml==5.2.1
 playwright==1.44.0
 scikit-learn
