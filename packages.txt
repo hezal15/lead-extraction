@@ -1,3 +1,4 @@
+wget
 curl
 unzip
 fonts-liberation
