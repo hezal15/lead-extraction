@@ -366,7 +366,15 @@ def best_general_email(emails):
 
 def extract_lead(url):
     url = normalize_url(url)
-
+    browser = p.chromium.launch(
+    headless=True,
+    args=[
+        "--no-sandbox",
+        "--disable-dev-shm-usage",
+        "--disable-gpu",
+        "--single-process"
+    ]
+)
     visited = set()
     queued = {url}
     queue = [url]
@@ -379,7 +387,15 @@ def extract_lead(url):
     all_candidates = []
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+        browser = p.chromium.launch(
+    headless=True,
+    args=[
+        "--no-sandbox",
+        "--disable-dev-shm-usage",
+        "--disable-gpu",
+        "--single-process"
+    ]
+)
         ctx = browser.new_context()
         page = ctx.new_page()
 
