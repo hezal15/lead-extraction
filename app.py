@@ -18,7 +18,7 @@ st.set_page_config(page_title="Lead Extractor", layout="wide")
 
 @st.cache_resource
 def load_models():
-    nlp = spacy.load("en_core_web_lg")
+    nlp = spacy.load("en_core_web_sm")
     sbert = SentenceTransformer("all-MiniLM-L6-v2")
     return nlp, sbert
 
