@@ -8,3 +8,7 @@ libgbm1
 libasound2
 libpangocairo-1.0-0
 libgtk-3-0
+build-essential
+python3-dev
+libxml2-dev
+libxslt1-dev
