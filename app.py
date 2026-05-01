@@ -1,5 +1,7 @@
 import asyncio
 import sys
+import os
+os.system("playwright install chromium")
 
 if sys.platform == "win32":
     asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
